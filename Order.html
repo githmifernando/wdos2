@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./main-styles.css">
+    
+</head>
+<body class="order-p">
+  <header class="header">
+    <a href="index.html">
+      <img class="logo" src="Grocies Supermarket (4).png" alt="logo">
+    </a>
+    
+    <div class="navbar">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="About US.html">About Us</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <li><a href="Products.html">Products</a></li>
+        </button>
+        <div class="dropdown-content">
+          <li><a href="Vegetables.html">Vegetables</a></li>
+          <li><a href="Dairy Products.html">Dairy Products</a></li>
+          <li><a href="Cosmatics.html">Cosmetic and SkinCare</a></li>
+        </div>
+      </div>
+      <li><a href="Order.html">Buy Now</a></li>
+      
+      <div class="icons-image">
+        <a href="Loyality.html">
+          <img src="imgs/add-user-icon-registration-illustration-sign-avatar-symbol-new-profile-logo-vector-removebg-preview.png" alt="">
+        </a>
+        <a href="./cart.html" class="registration-icon">
+          <img src="imgs/shopping-cart-icon-in-flat-style-symbol-vector-20616055-removebg-preview.png" alt="">
+        </a>
+       </div> 
+    </div>
+  </header>
+
+  <div class="order-main">
+    <img src="imgs/Untitled design (10).png" alt="" class="order-b">
+    <div class="order-main-t">
+      <h1>Order Now </h1>
+    </div>
+  </div>
+
+  <section class="order-form-container">
+    <div class="order-box">
+      <h1>Order Now!</h1>
+      <form action="/submit-order" method="post">
+        <div class="customer-info">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required>
+        </div>
+      
+        <div class="shipping-address">
+          <label for="address">Shipping Address:</label>
+          <textarea id="address" name="address" placeholder="Enter the shipping address" required></textarea>
+        </div>
+      
+        <div class="product-selection">
+          <label for="category">Select Category:</label>
+          <select id="category" name="category" required>
+            <option value="">--Please choose an option--</option>
+            <option value="vegetables">Vegetables</option>
+            <option value="dairy">Dairy Products</option>
+            <option value="cosmetics">Cosmetics</option>
+            <option value="skincare">Skincare</option>
+          </select>
+          
+          <label for="product">Product:</label>
+          <input type="text" id="product" name="product" required>
+          
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+      
+        <div class="additional-notes">
+          <label for="notes">Additional Notes:</label>
+          <textarea id="notes" name="notes"></textarea>
+        </div>
+      
+        <button type="button">Add to Cart</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer class="custom-footer">
+    <div class="footer-social">
+      <a href="#"><img src="fb.webp"></a> 
+      <a href=""><img src="instagram-circular-black-icon-vector-29783030-removebg-preview.png"></a>
+    </div>
+    <div class="footer-contact">
+      <p>Phone: +1234567890</p>
+      <p>Email: info@grociessupermarket.com</p>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Grocies Supermarket. All rights reserved.</p>
+    </div>
+    <div>
+     <!---https://www.freepik.com/---->
+    </div>
+  </footer>
+</body>
+</html>
